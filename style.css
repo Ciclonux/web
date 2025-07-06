@@ -1,0 +1,291 @@
+/* Reinicio básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+body {
+  font-family: sans-serif;
+  background-image: url(img/alga2.png);
+  background-color: #000000;
+}
+
+/* Header y navbar */
+header {
+  background-color: #0066ff;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  background-image: linear-gradient(rgba(20, 28, 39, 0.6), rgba(47, 49, 68, 0.6)), url(img/fondo1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Logo a la izquierda */
+.logo {
+  margin-left: 6rem;
+  height: 7rem;
+  width: 7rem;
+  
+}
+
+.logo img {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+
+}
+
+/* Enlaces centrados */
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links a:hover {
+  color: #f5a623;
+}
+
+.banner {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  margin: 2rem 0;           /* separa del navbar */
+}
+
+.banner img {
+  width: 600px;               /* reduce el ancho */
+  max-width: 600px;         /* no se pasa de este tamaño */
+  height: 300px;
+  border-radius: 10px;      /* opcional: esquinas redondeadas */
+  box-shadow: 0 10px 30px #585858; /* sombra añadida */
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.subtitulo2{
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background-color: rgb(199, 199, 199);
+  background-image: linear-gradient(rgba(92, 92, 92, 0.6), rgba(47, 49, 68, 0.6)), url(img/alga2.png);
+  width: 100%;            /* ocupa todo el ancho */
+  border-top: 5px solid #818181;   /* opcional: línea superior */
+  border-bottom: 5px solid #818181;/* opcional: línea inferior */
+}
+
+.subtitulo2 p {
+    text-align: center;
+    
+}
+
+.btn-conoce {
+    margin-top: 15px;
+    margin-bottom: 40px; /* o el espacio que prefieras */
+    padding: 10px 20px;
+    background-color: #143963;  /* azul bootstrap */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    
+}
+
+.btn-conoce:hover {
+    background-color: #f5a623; /* azul más oscuro al pasar el mouse */
+}
+
+h2{
+  text-align: center;
+  margin-top: 40px; /* ajusta el valor a lo que te guste */
+}
+
+.centrado {
+  text-align: center;
+  margin-bottom: 20px; /* espacio debajo del h2 */
+}
+
+.imagen-container {
+  display: flex;
+  justify-content: center; /* centra los bloques horizontalmente */
+  align-items: center;     /* alinea verticalmente */
+  gap: 20px;
+  max-width: 900px;        /* para limitar ancho y centrar */
+  margin: 0 auto;          /* centra el contenedor */
+}
+
+.bloque {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+.bloque.izquierda,
+.bloque.derecha {
+  flex: 1;
+}
+
+.bloque.centro img {
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px #585858; /* sombra añadida */
+}
+
+.bloque.izquierda img,
+.bloque.derecha img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 10px 30px #585858; /* sombra añadida */
+}
+
+
+
+
+
+
+
+
+.pie-pagina {
+  margin-top: 40px; /* o el espacio que quieras */
+  background-color: #143963;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contenedor-pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.columna-pie {
+  width: 220px;
+}
+
+
+.columna-pie h3,
+.columna-pie h4 {
+  margin-bottom: 10px;
+}
+
+.lista-locales {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-locales li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.iconos-redes .icono-red {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.menu-pie {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-pie a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.menu-pie a:hover {
+  text-decoration: underline;
+}
+
+.pie-inferior {
+  border-top: 1px solid #777;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.logo-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.logo-footer {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+  /*para mantener el orden de las imagenes de abajo*/
+
+.placeholder-horizontal {
+  width: 100%;
+  height: 140px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.placeholder-vertical {
+  width: 180px;
+  height: 300px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+
+  /*para mantener el orden del banner*/
+
+.placeholder-banner {
+  width: 600px;
+  height: 200px;
+  background-color: #bbb;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+
+
+

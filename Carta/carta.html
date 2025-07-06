@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/logo_t.png">
+  <title>El Tridente</title>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar" href="../index.html">
+      <div class="logo" >
+        <img src="icon/logo_t.png"  alt="Logo del sitio" >
+      </div>
+                 <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Nosotros/nosotros.html">Nosotros</a></li>
+        <li><a href="../Carta/">Carta</a></li>
+        <li><a href="../Locales/locales.html">Locales</a></li>
+        <li><a href="../Reserva/reserva.html">Reservas</a></li>
+        <li><a href="../Planta/planta.html">Planta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="titulo">Nuestra Carta</h1>
+
+    <section class="bloque">
+  <img src="img/ocopa.jpg" alt="Imagen sección 1">
+  <div class="contenido">
+    <h2 class="subtitulo">Piqueos</h2>
+    <ol class="complementos">
+      <li data-img="img/leche_tigre.webp">Leche de tigre</li>
+      <li data-img="img/tartar.jpeg">Tartar de salmón</li>
+      <li data-img="img/foto6.jpg">Conchas a la parmesana</li>
+      <li data-img="img/pulpo_olivo.jpg">Pulpo al olivo</li>
+      <li data-img="img/ocopa.jpg">Ocopa de langostinos</li>
+    </ol>
+  </div>
+</section>
+
+
+    <section class="bloque">
+      <img src="img/capital.jpg" alt="Imagen sección 2">
+      <div class="contenido">
+        <h2 class="subtitulo">Cebiches</h2>
+        <ol class="complementos">
+          <li data-img="img/oriental.webp">Cebiche oriental</li>
+          <li data-img="img/mixto.jpg">Cebiche mixto</li>
+          <li data-img="img/clasico.avif">Cebiche clasico</li>
+          <li data-img="img/capital.jpg">Cebiche capital</li>
+          <li data-img="img/costeño.webp">Cebiche costeño</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <img src="img/jalea_mixta.webp  " alt="Imagen sección 3">
+      <div class="contenido">
+        <h2 class="subtitulo">Chicharrones y jaleas</h2>
+        <ol class="complementos">
+          <li data-img="img/cmixto.webp">Chicharron Mixto</li>
+          <li data-img="img/cpescado.jpg">Chicharron de pescado</li>
+          <li data-img="img/ccalamar.jpg">Chicharron calamar</li>
+          <li data-img="img/jalea_mixta.webp">Jalea mixto</li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor-pie">
+      <div class="columna-pie">
+        <h3>Visítanos en:</h3>
+        <ul class="lista-locales">
+          <li>Santiago de Surco ▼</li>
+          <li>La Molina ▼</li>
+          <li>Miraflores ▼</li>
+          <li>San Borja ▼</li>
+        </ul>
+      </div>
+
+      <div class="columna-pie">
+        <h4><strong>Reservas y pedidos</strong></h4>
+        <p>(01) 555 5555</p>
+        <p>+51 999 999 999</p>
+      </div>
+
+      <!-- Columna del centro: logo -->
+      <div class="columna-pie logo-centro">
+        <img src="icon/logo_t.png" alt="Logo El Tridente" class="logo-footer">
+      </div>
+
+      <div class="columna-pie">
+        <h4><strong>Datos de contacto:</strong></h4>
+        <p>info@eltridenterestaurante.com</p>
+        <h4>Síguenos en:</h4>
+        <div class="iconos-redes">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="icon/face.png" alt="Facebook" class="icono-red">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="icon/insta.png" alt="instagram" class="icono-red">
+          </a>
+        </div>
+      </div>
+
+      <div class="columna-pie">
+        <nav class="menu-pie">
+          <a href="../index.html">Inicio</a>
+          <a href="../Nosotros/nosotros.html">Nosotros</a>
+          <a href="../Carta/carta.html">Carta</a>
+          <a href="../Locales/locales.html">Locales</a>
+          <a href="../Reserva/reserva.html">Reserva</a>
+          <a href="../">Libro de reclamaciones</a>
+          <a href="../Politicas/index.html">Políticas de privacidad</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="pie-inferior">
+      <p>El Tridente - ©2025 Todos los derechos reservados</p>
+    </div>
+
+  </footer>
+  <script>
+  // Buscar todas las listas con complementos
+  const secciones = document.querySelectorAll('.bloque');
+
+  secciones.forEach(seccion => {
+    const imagen = seccion.querySelector('img');
+    const items = seccion.querySelectorAll('li[data-img]');
+
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        const nuevaImagen = item.getAttribute('data-img');
+        if (nuevaImagen) {
+          imagen.src = nuevaImagen;
+        }
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>

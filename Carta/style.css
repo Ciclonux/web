@@ -1,0 +1,232 @@
+/* Reinicio básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: sans-serif;
+  background: #E0E0E0;
+}
+
+/* Header y navbar */
+header {
+  background-color: #333;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  /* Imagen de fondo */
+  background-image: linear-gradient(rgba(0, 63, 92, 0.4)), url('img/fondo1.jpeg');
+  background-size: cover;        /* Ajusta la imagen para cubrir toda la barra */
+  background-position: center;   /* Centra la imagen */
+  background-repeat: no-repeat;  /* Evita que se repita */
+
+}
+
+/* Logo a la izquierda */
+.logo {
+  margin-left: 6rem;
+  height: 7rem;
+  width: 7rem;
+  
+}
+
+.logo img {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+
+}
+
+/* Enlaces centrados */
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.nav-links a:hover {
+  color: #f5a623;
+}
+
+.complementos li:hover {
+  color: #013046; /* azul tridente */
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.titulo {
+  text-align: center;
+  font-family:"Cherry Swash", serif;
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  color: #003F5C;
+  cursor: pointer;
+}
+
+.bloque {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.bloque img {
+  background: white ;
+  width: 400px;        /* Mantiene proporción original */
+  height: 400px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.contenido {
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: auto;
+  
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding-bottom: 1rem;
+  color: #003F5C;
+  cursor: url(icon/tridente.png), pointer;
+}
+
+.complementos {
+  list-style: none;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+}
+
+.contenido li {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom: 1.5px solid black;
+  margin-bottom: 1.3rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.bloque img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.bloque img:hover {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* Pie de Pagina */
+
+
+.pie-pagina {
+  background-color: #003F5C;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contenedor-pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  gap: 30px;
+  
+}
+
+.columna-pie {
+  flex: 1 1 200px;
+  margin-left: 50px;
+}
+
+.columna-pie h3,
+.columna-pie h4 {
+  margin-bottom: 10px;
+}
+
+.lista-locales {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-locales li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.iconos-redes .icono-red {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.menu-pie {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-pie a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.menu-pie a:hover {
+  text-decoration: underline;
+}
+
+.pie-inferior {
+  border-top: 1px solid #777;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.logo-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.logo-footer {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
