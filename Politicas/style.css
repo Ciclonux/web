@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #E0E0E0;
+}
+
+header {
+  background-color: #333;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  background-image: linear-gradient(rgba(0, 63, 92, 0.4)), url('img/fondo1.jpeg');
+  background-size: cover;        /* Ajusta la imagen para cubrir toda la barra */
+  background-position: center;   /* Centra la imagen */
+  background-repeat: no-repeat;
+}
+
+/* Logo a la izquierda */
+.logo {
+  margin-left: 6rem;
+  height: 7rem;
+  width: 7rem;
+  
+}
+
+.logo img {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+
+}
+
+/* Enlaces centrados */
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links a:hover {
+  color: #f5a623;
+}
+
+/* COMIENZO DEL BODY */
+main {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 3700px;
+    padding: 20px;
+}
+
+.titulo {
+    width: 1000px;
+    padding: 25px;
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-left: 0rem;
+    margin-bottom: 3rem;
+    color: #003F5C;
+}
+
+main p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+/* COMIENZO DEL FOOTER */
+
+
+.pie-pagina {
+  background-color: #003F5C;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contenedor-pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  gap: 30px;
+  
+}
+
+.columna-pie {
+  flex: 1 1 200px;
+  margin-left: 50px;
+}
+
+.columna-pie h3,
+.columna-pie h4 {
+  margin-bottom: 10px;
+}
+
+.lista-locales {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.lista-locales a {
+  color: white;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.columna-pie #reservas {
+  display: flex;
+  flex-direction: column;
+}
+
+#reservas a{
+  width: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 25px ;
+}
+
+#reservas #ima_1{
+  position: absolute;
+  margin: 0 0 0 -25px;
+}
+
+#reservas #ima_2{
+  position: relative;
+  left: -25px;
+  top: 5px;
+}
+
+
+#contacto #enlace_correo {
+  color: white;
+  text-decoration: none;
+}
+
+#iconos-redes {
+  display: flex;
+  gap: 10px;
+  width: 50px;
+}
+
+#iconos-redes a {
+  text-decoration: none;
+}
+
+#iconos-redes img {
+  width: 20px;
+  height: 20px;
+}
+
+.menu-pie {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-pie a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.menu-pie a:hover {
+  text-decoration: underline;
+}
+
+.pie-inferior {
+  border-top: 1px solid #777;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.logo-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.logo-footer {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}

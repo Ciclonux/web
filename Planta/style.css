@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #E0E0E0;
+}
+
+header {
+  background-color: #333;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  background-image: linear-gradient(rgba(0, 63, 92, 0.4)), url('img/fondo1.jpeg');
+  background-size: cover;        /* Ajusta la imagen para cubrir toda la barra */
+  background-position: center;   /* Centra la imagen */
+  background-repeat: no-repeat;
+}
+
+/* Logo a la izquierda */
+.logo {
+  margin-left: 6rem;
+  height: 7rem;
+  width: 7rem;
+  
+}
+
+.logo img {
+  height: 7rem;
+  width: 7rem;
+  align-items: center;
+
+}
+
+/* Enlaces centrados */
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links a:hover {
+  color: #f5a623;
+}
+
+
+/* Main */
+
+.titulo {
+    width: 1000px;
+    padding: 25px;
+    font-size: 4rem;
+    margin-top: 4rem;
+    margin-left: 11rem;
+    margin-bottom: 3rem;
+    color: #003F5C;
+}
+
+.content {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-bottom: 3rem;
+    margin-left: 11rem;
+}
+
+.content p {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.cuadro_procentajes{
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.cuadro{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro h3{
+    font-size: 2.75rem;
+    color: #003F5C;
+    margin-bottom: 3rem;
+}
+
+.cuadro p{
+    padding: 0 30px 0 30px;
+    text-align: justify;
+}
+
+.linea_vertical{
+    width: 10px;
+    height: 275px;
+    border-radius: 10px;
+    margin: 0 20px;
+    gap: 30px;
+    background-color: #003F5C;
+}
+
+.procesos{
+    width: 1400px;
+    height: 2000px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.procesos h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #003F5C;
+    margin-bottom: 2rem;
+}
+
+#h2_principal{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 7.5rem;
+}
+/* Bloques de procesos */
+
+.bloques{
+    width: 1200px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.imagen_body{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.imagen_body ul {
+  display: flex;
+  width: 300%;
+  margin: 0;
+  padding: 0;
+
+  animation: slide 12s alternate infinite ease-in-out;
+}
+
+.imagen_body li {
+  width: 100%;         
+  height: 100%;
+  padding: 0;         
+  margin: 0;            /* Elimina márgenes */
+  list-style: none; 
+}
+
+.bloques img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover; /* Mantiene proporción original */
+    border-radius: 30px;
+}
+
+@keyframes slide {
+  0% { margin-left: 0%; }
+  30% { margin-left: 0%; }
+
+  35% { margin-left: -100%; }
+  65% { margin-left: -100%; }
+
+  70% { margin-left: -200%; }
+  100% { margin-left: -200%; }
+}
+
+.texto{
+    width: 500px;
+    margin: 0 6rem;
+}
+.texto p{
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+/* Footer */
+
+.pie-pagina {
+  background-color: #003F5C;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contenedor-pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  gap: 30px;
+  
+}
+
+.columna-pie {
+  flex: 1 1 200px;
+  margin-left: 50px;
+}
+
+.columna-pie h3,
+.columna-pie h4 {
+  margin-bottom: 10px;
+}
+
+.lista-locales {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.lista-locales a {
+  color: white;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.columna-pie #reservas {
+  display: flex;
+  flex-direction: column;
+}
+
+#reservas a{
+  width: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 25px ;
+}
+
+#reservas #ima_1{
+  position: absolute;
+  margin: 0 0 0 -25px;
+}
+
+#reservas #ima_2{
+  position: relative;
+  left: -25px;
+  top: 5px;
+}
+
+
+#contacto #enlace_correo {
+  color: white;
+  text-decoration: none;
+}
+
+#iconos-redes {
+  display: flex;
+  gap: 10px;
+  width: 50px;
+}
+
+#iconos-redes a {
+  text-decoration: none;
+}
+
+#iconos-redes img {
+  width: 20px;
+  height: 20px;
+}
+
+.menu-pie {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-pie a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.menu-pie a:hover {
+  text-decoration: underline;
+}
+
+.pie-inferior {
+  border-top: 1px solid #777;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.logo-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.logo-footer {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
